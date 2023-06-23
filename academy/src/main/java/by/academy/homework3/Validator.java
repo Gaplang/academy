@@ -1,5 +1,9 @@
 package by.academy.homework3;
 
+import java.util.regex.Pattern;
+
 public interface Validator {
-	boolean validate(String input);
+	deafult boolean isValid (String value) {
+		return getPattern().matcher(value);}
+	Pattern getPattern();
 }
