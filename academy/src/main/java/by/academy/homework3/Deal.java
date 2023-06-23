@@ -1,6 +1,8 @@
 package by.academy.homework3;
 
 import java.util.Arrays;
+import java.time.LocalDate;
+
 
 public class Deal {
 
@@ -9,6 +11,8 @@ public class Deal {
 	User seller;
 	Product[] products;
 	int index = 0;
+	LocalDate deadLineDate = LocalDate.now().plusDays(10);
+	
 
 	public Deal(String adress, User buyer, User seller, Product[] products) {
 		super();
@@ -69,7 +73,7 @@ public class Deal {
 
 	public String toString() {
 		return "Deal [adress=" + adress + ", buyer=" + buyer + ", seller=" + seller + ", products="
-				+ Arrays.toString(products) + "]";
+				+ Arrays.toString(products) + " deaLineDate " + deaLineDate "]";
 	}
 
 	public int hashCode() {
