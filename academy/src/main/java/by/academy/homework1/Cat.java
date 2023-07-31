@@ -69,7 +69,7 @@ public class Cat {
 		this.isHomeAnimals = isHomeAnimals;
 	}
 
-	@Override
+
 	public String toString() {
 		return "nickname: " + nickname + ',' + " age: " + age + ',' + " initials: " + initials + ',' + " money: "
 				+ money + ',' + " isHomeAnimal: " + isHomeAnimals + ',' + " color: " + color + ',' + " weight "

@@ -28,7 +28,7 @@ public class Man {
 		age = age + 1;
 	}
 
-	@Override
+	
 	public String toString() {
 		return "Name: " + name + ", hair color: " + hairColor + " passport number " + passportNumber + " age: " + age
 				+ " weight: " + weight + " height " + height;
